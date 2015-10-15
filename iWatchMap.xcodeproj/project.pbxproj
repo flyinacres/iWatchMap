@@ -13,6 +13,13 @@
 		A5D5AB2B1BCF737400FD58AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D5AB2A1BCF737400FD58AE /* Images.xcassets */; };
 		A5D5AB2E1BCF737400FD58AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D5AB2C1BCF737400FD58AE /* LaunchScreen.xib */; };
 		A5D5AB3A1BCF737400FD58AE /* iWatchMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D5AB391BCF737400FD58AE /* iWatchMapTests.swift */; };
+		A5D5AB4D1BCF737C00FD58AE /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D5AB4C1BCF737C00FD58AE /* InterfaceController.swift */; };
+		A5D5AB4F1BCF737C00FD58AE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D5AB4E1BCF737C00FD58AE /* NotificationController.swift */; };
+		A5D5AB511BCF737C00FD58AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D5AB501BCF737C00FD58AE /* Images.xcassets */; };
+		A5D5AB551BCF737C00FD58AE /* iWatchMap WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = A5D5AB541BCF737C00FD58AE /* iWatchMap WatchKit App.app */; };
+		A5D5AB5D1BCF737C00FD58AE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D5AB5B1BCF737C00FD58AE /* Interface.storyboard */; };
+		A5D5AB5F1BCF737C00FD58AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D5AB5E1BCF737C00FD58AE /* Images.xcassets */; };
+		A5D5AB621BCF737C00FD58AE /* iWatchMap WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A5D5AB471BCF737C00FD58AE /* iWatchMap WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +30,35 @@
 			remoteGlobalIDString = A5D5AB1D1BCF737400FD58AE;
 			remoteInfo = iWatchMap;
 		};
+		A5D5AB561BCF737C00FD58AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5D5AB161BCF737400FD58AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5D5AB531BCF737C00FD58AE;
+			remoteInfo = "iWatchMap WatchKit App";
+		};
+		A5D5AB601BCF737C00FD58AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5D5AB161BCF737400FD58AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5D5AB461BCF737C00FD58AE;
+			remoteInfo = "iWatchMap WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5D5AB691BCF737C00FD58AE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A5D5AB621BCF737C00FD58AE /* iWatchMap WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A5D5AB1E1BCF737400FD58AE /* iWatchMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWatchMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +71,16 @@
 		A5D5AB331BCF737400FD58AE /* iWatchMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iWatchMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D5AB381BCF737400FD58AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5D5AB391BCF737400FD58AE /* iWatchMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iWatchMapTests.swift; sourceTree = "<group>"; };
+		A5D5AB471BCF737C00FD58AE /* iWatchMap WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iWatchMap WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D5AB4A1BCF737C00FD58AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5D5AB4B1BCF737C00FD58AE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A5D5AB4C1BCF737C00FD58AE /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A5D5AB4E1BCF737C00FD58AE /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A5D5AB501BCF737C00FD58AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5D5AB541BCF737C00FD58AE /* iWatchMap WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iWatchMap WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D5AB5A1BCF737C00FD58AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5D5AB5C1BCF737C00FD58AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A5D5AB5E1BCF737C00FD58AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +98,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5D5AB441BCF737C00FD58AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +113,8 @@
 			children = (
 				A5D5AB201BCF737400FD58AE /* iWatchMap */,
 				A5D5AB361BCF737400FD58AE /* iWatchMapTests */,
+				A5D5AB481BCF737C00FD58AE /* iWatchMap WatchKit Extension */,
+				A5D5AB581BCF737C00FD58AE /* iWatchMap WatchKit App */,
 				A5D5AB1F1BCF737400FD58AE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +124,8 @@
 			children = (
 				A5D5AB1E1BCF737400FD58AE /* iWatchMap.app */,
 				A5D5AB331BCF737400FD58AE /* iWatchMapTests.xctest */,
+				A5D5AB471BCF737C00FD58AE /* iWatchMap WatchKit Extension.appex */,
+				A5D5AB541BCF737C00FD58AE /* iWatchMap WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +168,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A5D5AB481BCF737C00FD58AE /* iWatchMap WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A5D5AB4C1BCF737C00FD58AE /* InterfaceController.swift */,
+				A5D5AB4E1BCF737C00FD58AE /* NotificationController.swift */,
+				A5D5AB501BCF737C00FD58AE /* Images.xcassets */,
+				A5D5AB491BCF737C00FD58AE /* Supporting Files */,
+			);
+			path = "iWatchMap WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A5D5AB491BCF737C00FD58AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5D5AB4A1BCF737C00FD58AE /* Info.plist */,
+				A5D5AB4B1BCF737C00FD58AE /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5D5AB581BCF737C00FD58AE /* iWatchMap WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A5D5AB5B1BCF737C00FD58AE /* Interface.storyboard */,
+				A5D5AB5E1BCF737C00FD58AE /* Images.xcassets */,
+				A5D5AB591BCF737C00FD58AE /* Supporting Files */,
+			);
+			path = "iWatchMap WatchKit App";
+			sourceTree = "<group>";
+		};
+		A5D5AB591BCF737C00FD58AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5D5AB5A1BCF737C00FD58AE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +216,12 @@
 				A5D5AB1A1BCF737400FD58AE /* Sources */,
 				A5D5AB1B1BCF737400FD58AE /* Frameworks */,
 				A5D5AB1C1BCF737400FD58AE /* Resources */,
+				A5D5AB691BCF737C00FD58AE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A5D5AB611BCF737C00FD58AE /* PBXTargetDependency */,
 			);
 			name = iWatchMap;
 			productName = iWatchMap;
@@ -150,6 +246,39 @@
 			productReference = A5D5AB331BCF737400FD58AE /* iWatchMapTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A5D5AB461BCF737C00FD58AE /* iWatchMap WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5D5AB661BCF737C00FD58AE /* Build configuration list for PBXNativeTarget "iWatchMap WatchKit Extension" */;
+			buildPhases = (
+				A5D5AB431BCF737C00FD58AE /* Sources */,
+				A5D5AB441BCF737C00FD58AE /* Frameworks */,
+				A5D5AB451BCF737C00FD58AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5D5AB571BCF737C00FD58AE /* PBXTargetDependency */,
+			);
+			name = "iWatchMap WatchKit Extension";
+			productName = "iWatchMap WatchKit Extension";
+			productReference = A5D5AB471BCF737C00FD58AE /* iWatchMap WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		A5D5AB531BCF737C00FD58AE /* iWatchMap WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5D5AB631BCF737C00FD58AE /* Build configuration list for PBXNativeTarget "iWatchMap WatchKit App" */;
+			buildPhases = (
+				A5D5AB521BCF737C00FD58AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iWatchMap WatchKit App";
+			productName = "iWatchMap WatchKit App";
+			productReference = A5D5AB541BCF737C00FD58AE /* iWatchMap WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +294,12 @@
 					A5D5AB321BCF737400FD58AE = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = A5D5AB1D1BCF737400FD58AE;
+					};
+					A5D5AB461BCF737C00FD58AE = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					A5D5AB531BCF737C00FD58AE = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -183,6 +318,8 @@
 			targets = (
 				A5D5AB1D1BCF737400FD58AE /* iWatchMap */,
 				A5D5AB321BCF737400FD58AE /* iWatchMapTests */,
+				A5D5AB461BCF737C00FD58AE /* iWatchMap WatchKit Extension */,
+				A5D5AB531BCF737C00FD58AE /* iWatchMap WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +339,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D5AB451BCF737C00FD58AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D5AB511BCF737C00FD58AE /* Images.xcassets in Resources */,
+				A5D5AB551BCF737C00FD58AE /* iWatchMap WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D5AB521BCF737C00FD58AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D5AB5D1BCF737C00FD58AE /* Interface.storyboard in Resources */,
+				A5D5AB5F1BCF737C00FD58AE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +380,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5D5AB431BCF737C00FD58AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D5AB4F1BCF737C00FD58AE /* NotificationController.swift in Sources */,
+				A5D5AB4D1BCF737C00FD58AE /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +396,16 @@
 			isa = PBXTargetDependency;
 			target = A5D5AB1D1BCF737400FD58AE /* iWatchMap */;
 			targetProxy = A5D5AB341BCF737400FD58AE /* PBXContainerItemProxy */;
+		};
+		A5D5AB571BCF737C00FD58AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5D5AB531BCF737C00FD58AE /* iWatchMap WatchKit App */;
+			targetProxy = A5D5AB561BCF737C00FD58AE /* PBXContainerItemProxy */;
+		};
+		A5D5AB611BCF737C00FD58AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5D5AB461BCF737C00FD58AE /* iWatchMap WatchKit Extension */;
+			targetProxy = A5D5AB601BCF737C00FD58AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +424,14 @@
 				A5D5AB2D1BCF737400FD58AE /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A5D5AB5B1BCF737C00FD58AE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5D5AB5C1BCF737C00FD58AE /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -390,6 +572,62 @@
 			};
 			name = Release;
 		};
+		A5D5AB641BCF737C00FD58AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = iWatchMap_WatchKit_Extension;
+				INFOPLIST_FILE = "iWatchMap WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		A5D5AB651BCF737C00FD58AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = iWatchMap_WatchKit_Extension;
+				INFOPLIST_FILE = "iWatchMap WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		A5D5AB671BCF737C00FD58AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iWatchMap WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A5D5AB681BCF737C00FD58AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "iWatchMap WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +653,22 @@
 			buildConfigurations = (
 				A5D5AB411BCF737400FD58AE /* Debug */,
 				A5D5AB421BCF737400FD58AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5D5AB631BCF737C00FD58AE /* Build configuration list for PBXNativeTarget "iWatchMap WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D5AB641BCF737C00FD58AE /* Debug */,
+				A5D5AB651BCF737C00FD58AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5D5AB661BCF737C00FD58AE /* Build configuration list for PBXNativeTarget "iWatchMap WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D5AB671BCF737C00FD58AE /* Debug */,
+				A5D5AB681BCF737C00FD58AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
