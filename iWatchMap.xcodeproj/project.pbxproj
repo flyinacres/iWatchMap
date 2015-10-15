@@ -20,6 +20,7 @@
 		A5D5AB5D1BCF737C00FD58AE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D5AB5B1BCF737C00FD58AE /* Interface.storyboard */; };
 		A5D5AB5F1BCF737C00FD58AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D5AB5E1BCF737C00FD58AE /* Images.xcassets */; };
 		A5D5AB621BCF737C00FD58AE /* iWatchMap WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A5D5AB471BCF737C00FD58AE /* iWatchMap WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5D5AB6B1BCF790000FD58AE /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A5D5AB6A1BCF790000FD58AE /* download.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		A5D5AB5A1BCF737C00FD58AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5D5AB5C1BCF737C00FD58AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		A5D5AB5E1BCF737C00FD58AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5D5AB6A1BCF790000FD58AE /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 		A5D5AB581BCF737C00FD58AE /* iWatchMap WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				A5D5AB6A1BCF790000FD58AE /* download.jpeg */,
 				A5D5AB5B1BCF737C00FD58AE /* Interface.storyboard */,
 				A5D5AB5E1BCF737C00FD58AE /* Images.xcassets */,
 				A5D5AB591BCF737C00FD58AE /* Supporting Files */,
@@ -357,6 +360,7 @@
 			files = (
 				A5D5AB5D1BCF737C00FD58AE /* Interface.storyboard in Resources */,
 				A5D5AB5F1BCF737C00FD58AE /* Images.xcassets in Resources */,
+				A5D5AB6B1BCF790000FD58AE /* download.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

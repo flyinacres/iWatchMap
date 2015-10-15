@@ -23,6 +23,9 @@ class InterfaceController: WKInterfaceController {
         let region = MKCoordinateRegion(center: location,
             span: span)
         map.setRegion(region)
+        
+        map.addAnnotation(location, withPinColor: WKInterfaceMapPinColor.Green)
+        map.addAnnotation(location, withImageNamed: "download.jpeg", centerOffset: CGPoint(x: 0, y: 0))
     }
 
     override func willActivate() {
