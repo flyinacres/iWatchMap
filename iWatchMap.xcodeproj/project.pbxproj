@@ -21,6 +21,7 @@
 		A5D5AB5F1BCF737C00FD58AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D5AB5E1BCF737C00FD58AE /* Images.xcassets */; };
 		A5D5AB621BCF737C00FD58AE /* iWatchMap WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A5D5AB471BCF737C00FD58AE /* iWatchMap WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A5D5AB6B1BCF790000FD58AE /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A5D5AB6A1BCF790000FD58AE /* download.jpeg */; };
+		A5D5AB6D1BD2A3EA00FD58AE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D5AB6C1BD2A3EA00FD58AE /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		A5D5AB5C1BCF737C00FD58AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		A5D5AB5E1BCF737C00FD58AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A5D5AB6A1BCF790000FD58AE /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
+		A5D5AB6C1BD2A3EA00FD58AE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D5AB6D1BD2A3EA00FD58AE /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +116,7 @@
 		A5D5AB151BCF737400FD58AE = {
 			isa = PBXGroup;
 			children = (
+				A5D5AB6C1BD2A3EA00FD58AE /* CoreLocation.framework */,
 				A5D5AB201BCF737400FD58AE /* iWatchMap */,
 				A5D5AB361BCF737400FD58AE /* iWatchMapTests */,
 				A5D5AB481BCF737C00FD58AE /* iWatchMap WatchKit Extension */,

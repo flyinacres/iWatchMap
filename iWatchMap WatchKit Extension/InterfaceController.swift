@@ -8,13 +8,20 @@
 
 import WatchKit
 import Foundation
+import CoreLocation
 
 
-class InterfaceController: WKInterfaceController {
+class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
     @IBOutlet weak var map: WKInterfaceMap!
+    var locationManager = CLLocationManager()
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
         
         let location = CLLocationCoordinate2D(
             latitude: 51.52, longitude: -0.125)
@@ -38,4 +45,7 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        print(locations)
+    }
 }
