@@ -23,16 +23,22 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
         
+    }
+    
+    func setMapAtLocation(latitude: Double, longitude: Double) {
         let location = CLLocationCoordinate2D(
-            latitude: 51.52, longitude: -0.125)
+            latitude: latitude, longitude: longitude)
         let span = MKCoordinateSpan(
             latitudeDelta: 0.005, longitudeDelta: 0.005)
         let region = MKCoordinateRegion(center: location,
             span: span)
         map.setRegion(region)
         
-        map.addAnnotation(location, withPinColor: WKInterfaceMapPinColor.Green)
-        map.addAnnotation(location, withImageNamed: "download.jpeg", centerOffset: CGPoint(x: 0, y: 0))
+        map.removeAllAnnotations()
+        //map.addAnnotation(location, withPinColor: WKInterfaceMapPinColor.Green)
+        //map.add
+        map.addAnnotation(location, withImageNamed: "William.png", centerOffset: CGPoint(x: 0, y: 0))
+        
     }
 
     override func willActivate() {
@@ -44,8 +50,25 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+    
+    var savedLatitude: Double = 0.0
+    var savedLongitude: Double = 0.0
 
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        print(locations)
+        let locationArray = locations as NSArray
+        let location = locationArray[0] as! CLLocation
+        
+        let newLat = location.coordinate.latitude
+        let newLong = location.coordinate.longitude
+    
+        if newLat != savedLatitude && newLong != savedLongitude {
+            setMapAtLocation(newLat, longitude: newLong)
+            savedLatitude = newLat
+            savedLongitude = newLong
+            
+            println(newLat)
+            println(newLong)
+        }
+
     }
 }
